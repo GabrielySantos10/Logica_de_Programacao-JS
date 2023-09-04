@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de codar!</title>
+
+    <script>
+       
+       
+        /* Objetivo: Faça um programa para ler 3 valores 
+        (considere que não serão informados valores iguais) e escrever o maior deles. */
+
+        var number1 = prompt("Informe o primeiro número");
+        var number2 = prompt("Informe o segundo número");
+        var number3 = prompt("Informe o terceiro número");
+
+        number1 = parseInt(number1);
+        number2 = parseInt(number2);
+        number3 = parseInt(number3);
+
+
+        if (number1 > number2 && number1 > number3) {
+            alert(number1)
+            document.write(number1)
+        }
+        else if (number2 > number1 && number2 > number3) {
+            alert(number2)
+            document.write(number2)
+        }
+        else {
+            alert(number3)
+            document.write(number3)
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

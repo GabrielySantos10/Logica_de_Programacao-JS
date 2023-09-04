@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de codar2!</title>
+
+    <script>
+        var ano_de_nascimento = prompt("Informe o seu ano de nascimento:");
+        var ano = prompt("Informe o ano da eleição:");
+        var resultado = ano - ano_de_nascimento;
+
+        if (resultado >= 18) {
+            alert("Você pode votar! Seu voto é obrigatório.");
+            console.write("Você pode votar! Seu voto é obrigatório.")
+        }
+
+        else if (resultado >= 16) {
+            alert("Você pode votar! Seu voto é opcional.");
+            console.write("Você pode votar! Seu voto é opcional.")
+        }
+        else {
+            alert("Você não pode votar!");
+            console.write("Você não pode votar!")
+        }
+
+
+        /* Objetivo: Escreva um programa para ler o ano de nascimento de uma pessoa e escrever uma mensagem
+         que diga se ela poderá ou não votar este ano (não é necessário considerar o mês em que ela nasceu).  */
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

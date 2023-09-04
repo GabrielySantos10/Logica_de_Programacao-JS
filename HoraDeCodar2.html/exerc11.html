@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hora de codar2!</title>
+
+  <script>
+
+  
+    /* Objetivo: Uma micro calculadora.
+    Escreva um programa para ler 2 valores inteiros informados pelo usuário e uma das seguintes operações 
+    a serem executadas (codificada da seguinte forma: 1. Adição, 2. Subtração, 3. Divisão, 4. Multiplicação).
+    O programa deve calcular e escrever o resultado dessa operação sobre os dois valores lidos. 
+    Observação: Considere que só serão lidos os valores 1, 2, 3 ou 4 para as operações  */
+
+    var number1 = parseInt(prompt("Informe o primeiro número"));
+    var number2 = parseInt(prompt("Informe o segundo número"));
+    var tecla = parseInt(prompt("Informe a operação 1. Adição, 2. Subtração, 3. Divisão, 4. Multiplicação"));
+    let resultado = number1 + number2;
+
+
+    if (tecla == 1) {
+      alert(" Resultado da Adição: " + resultado);
+
+    }
+    else if (tecla == 2) {
+      alert(" Resultado da Subtração: " + number1 - number2);
+    }
+    else if (tecla == 3) {
+      alert(" Resultado da Divisão: " + number1 / number2);
+    }
+    else if (tecla === 4) {
+      alert(" Resultado da Multiplicação: " + number1 * number2);
+    }
+    else
+      alert("Operação Inválida!");
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

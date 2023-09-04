@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hora de Codar2!</title>
+
+    <script>
+
+
+        /* Objetivo: Tendo como entrada a altura e o sexo (codificado da seguinte
+         forma: 1: feminino 2: masculino) de uma pessoa, construa um programa que 
+         calcule e imprima seu peso ideal. */
+
+        var altura = parseFloat(prompt("Informe sua altura:"));
+        var sexo = prompt("Informe seu sexo: (1) feminino (2) masculino");
+        var peso_ideal = 0;
+
+        if (isNaN(altura)) {
+            alert("Esse valor não é válido");
+            alert("Exemplo: 1.65")
+            alert(altura);
+        }
+
+        else if (sexo == 1) {
+            peso_ideal = (62.1 * altura) - 44.7;
+            document.write(peso_ideal.toFixed(2) + "kg");
+            alert(peso_ideal.toFixed(2) + "kg");
+
+        }
+
+        else if (sexo == 2) {
+            peso_ideal = (72.7 * altura) - 58;
+            document.write(peso_ideal.toFixed(2) + "kg");
+            alert(peso_ideal.toFixed(2) + "kg");
+        }
+
+        else {
+            alert("Esse valor não é válido");
+            alert(sexo);
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

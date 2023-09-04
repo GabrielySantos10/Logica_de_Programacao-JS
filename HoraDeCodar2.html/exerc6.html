@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de codar2!</title>
+
+    <script>
+        
+
+        /* Objetivo:Faça um programa que receba quatro valores informados pelo usuário, mas informe somente o primeiro,
+         o último e o maior de todos eles (considere que todos os números informados serão diferentes). */
+
+        var number1 = parseInt(prompt("Informe o primeiro número"));
+        var number2 = parseInt(prompt("Informe o segundo número"));
+        var number3 = parseInt(prompt("Informe o terceiro número"));
+        var number4 = parseInt(prompt("Informe o quarto número"));
+        var maior;
+
+        if (number1 > number2 && number1 > number3 && number1 > number4) {
+            maior = number1;
+        }
+        else if (number2 > number3 && number2 > number4) {
+            maior = number2;
+        }
+        else if (number3 > number4) {
+            maior = number3;
+        }
+        else {
+            maior = number4;
+        }
+
+        alert("Primeiro número: " + number1 + " Último número: " + number4 + " Maior número: " + maior);
+        document.write("Primeiro número: " + number1 + "<br>Último número: " + number4 + "<br>Maior número: " + maior);
+   </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

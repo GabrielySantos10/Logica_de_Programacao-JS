@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de codar2!</title>
+
+    <script>
+     
+
+        /* Objetivo: Faça um programa que leia 3 valores informados pelo usuário
+         (considere que não serão informados valores iguais) e escrever a soma dos 2 maiores. */
+        
+        var number1 = prompt("Informe o primeiro número");
+        var number2 = prompt("Informe o segundo número");
+        var number3 = prompt("Informe o terceiro número");
+        
+        number1 = parseInt(number1);
+        number2 = parseInt(number2);
+        number3 = parseInt(number3);
+
+        if(number1 > number2 && number1 > number3 && number2 >number3){
+            alert(number1 + number2);
+            document.write(number1 + number2);
+        }
+        else if(number1 > number2 && number1 > number3 && number3 >number2){
+            alert(number1   + number3);
+            document.write(number1  +  number3);
+        }
+        else if(number2 > number1 && number2 > number3 && number1 >number3){
+            alert(number2   + number1);
+            document.write(number2  +  number1);
+        }
+        else if(number2 > number1 && number2 > number3 && number3 >number1){
+            alert(number2   + number3);
+            document.write(number2   +  number3);
+        }
+        else if(number3 > number1 && number3 > number2 && number1 >number2){
+            alert(number3  +  number1);
+            document.write(number3  +  number1);
+        }
+        else{
+            alert(number3   +   number2);
+            document.write(number3   +  number2);
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

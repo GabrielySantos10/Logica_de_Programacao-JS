@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hora de codar2!</title>
+
+    <script>
+
+
+       /* Objetivo: Escreva um programa que calcule a média de quatro números informados pelo usuário, mas somente 
+        se esses números forem maiores que 0 e menores que 10. No final, se a média for maior que cinco o usuário
+        receberá uma mensagem "Você passou no teste". Em qualquer outra situação, ele receberá uma mensagem de "tente novamente" */
+
+        var number1 = parseInt(prompt("Informe o primeiro número"))
+
+        var number2 = parseInt(prompt("Informe o segundo número"))
+
+        var number3 = parseInt(prompt("Informe o terceiro número"))
+
+        var number4 = parseInt(prompt("Informe o quarto número"))
+
+        var sum = 0;
+
+        var contador = 0;
+
+
+
+        if (number1 < 10 && number1 > 0) {
+
+            sum = sum + number1;
+
+            contador++;
+
+        }
+
+        if (number2 < 10 && number2 > 0) {
+
+            sum = sum + number2
+
+            contador++;
+
+        }
+
+        if (number3 < 10 && number3 > 0) {
+
+            sum = sum + number3
+
+            contador++;
+
+        }
+
+        if (number4 < 10 && number4 > 0) {
+
+            sum = sum + number4
+
+            contador++;
+
+        }
+
+
+
+        if (sum / contador <= 5) {
+
+            alert("Média: " + (sum / contador) + " Tente novamente!");
+
+            document.write("Média: " +(sum / contador) + "<br> Tente novamente!");
+
+        }
+
+        else {
+
+            alert("Média: " + (sum / contador) + " Você passou no teste.");
+
+            document.write("Média: " +(sum / contador) + "<br> Você passou no teste.");
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
