@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de Codar3!</title>
+
+    <script>
+
+
+        /* Objetivo:Escreva um programa em que o usuário informe 10 valores e escreva quantos desses valores 
+        lidos estão entre os números 24 e 42 (incluindo os valores 24 e 42) e quantos deles estão fora deste intervalo.  */
+
+        var todos_valores = 0;
+        var contador = 0;
+        
+        while(todos_valores < 10){
+            var valores = parseInt(prompt("Informe o valor:"));
+            if( valores >=24 && valores<=42){
+                contador +=1;
+                
+            }
+        
+            todos_valores +=1
+
+       var fora= todos_valores- contador;
+        }
+        document.write( contador +" valores estão entre os números 24 e 42. " +  " <br>" + fora +" valores não estão entre os números 24 e 42. ");
+    
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de Codar3!</title>
+
+    <script>
+
+
+        /* Objetivo:Escreva um programa para imprimir todas as tabuadas de 1 a N. N será informado pelo usuário.*/
+
+            var n = parseInt(prompt("Informe o valor de N:"));
+            var tabuada_do = 1;
+
+        while (tabuada_do <= n) {
+
+            document.write("Tabuada do " + tabuada_do + ":");
+            var multiplicador = 1;
+            
+            while (multiplicador <= 10) {
+                document.write("<br>" + tabuada_do + " x " + multiplicador + " = " + (tabuada_do * multiplicador) + "<br>");
+                multiplicador++;
+            }
+            document.write("<br>");
+            tabuada_do++;
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

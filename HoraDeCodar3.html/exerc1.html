@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de Codar3!</title>
+
+    <script>
+
+
+        // <!-- Objetivo: Escreva um algoritmo para ler 2 valores informados pelo usuário e se o segundo valor informado for igual ou menor
+        // que ZERO, deve ser lido um novo valor. Ou seja, para o segundo valor não pode ser aceito o valor zero, nem um 
+        // valor negativo. O seu programa deve imprimir o resultado da divisão do primeiro valor lido pelo segundo valor.  -->
+
+        var number1 = parseInt(prompt("Informe o primeiro número:"))
+        var number2 = parseInt(prompt("Informe o segundo número:"))
+
+       while (number2 <= 0){
+        number2 = parseInt(prompt("Informe o segundo número:"));
+
+       }
+        alert(number1 /number2);
+        document.write("Resultado: " + number1/number2)
+   
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

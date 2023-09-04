@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de Codar3!</title>
+
+    <script>
+
+
+        /* Objetivo: Escreva um programa para ler 2 notas de um aluno, calcular e imprimir a média final.
+         .Considere que a nota de aprovação é 9,5 Logo após escrever a mensagem "Calcular a média de outro 
+         aluno Sim/Não?" e solicitar um resposta. Se a resposta for "S", o programa deve ser executado novamente,
+         caso contrário deve ser encerrado exibindo a quantidade de alunos aprovados.  */
+
+        var aluno_aprovado = 0;
+
+        while (true) {
+            var nota1 = parseFloat(prompt("Informe a primeira nota:"));
+            var nota2 = parseFloat(prompt("Informe a segunda nota:"));
+
+            var media = (nota1 + nota2) / 2;
+
+            if (media >= 9.5) {
+                aluno_aprovado++;
+                document.write("Média: " + media + " - Aluno Aprovado<br>");
+            } else {
+                document.write("Média: " + media + " - Aluno Reprovado<br>");
+            }
+
+            var resposta = prompt("Calcular a média de outro aluno? (S para sim, N para não)").toUpperCase();
+
+            if (resposta !== "S") {
+                break;
+            }
+        }
+
+        document.write("Total de alunos aprovados: " + aluno_aprovado);
+
+
+    </script>
+</head>
+
+<body>
+
+</body>

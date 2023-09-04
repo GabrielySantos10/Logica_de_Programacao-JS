@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de Codar3!</title>
+
+    <script>
+
+
+        /* Objetivo:Escreva um algoritmo para ler as notas de avaliações de um aluno, calcule e imprima a média
+        (simples) desse aluno. Só devem ser aceitos valores válidos durante a leitura (0 a 10) para cada nota. 
+        São 6 notas ao total. Caso o valor informado para qualquer uma das notas esteja fora do limite 
+        estabelecido, deve ser solicitado um novo valor ao usuário.   */
+
+        var todas_notas = 0;
+        var soma_notas = 0;
+        
+        while(todas_notas < 6){
+            var number1 = parseInt(prompt("Informe sua nota (0 a 10)"));
+            if( number1 >=0 && number1<=10){
+                soma_notas += number1;
+                todas_notas +=1
+            }
+
+            if (todas_notas == 6) {
+                break;
+            }
+        
+        }
+        document.write("Média: " + soma_notas/6)
+    
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
