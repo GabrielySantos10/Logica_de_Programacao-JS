@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        /* para declarar uma variavel, usa var na frente
+           alert é como um print
+           sintaxe Java Script tem as mesmas regras de Python
+           Operadores são iguais + - / *
+           prompt() = input()
+           parseInt() converte letra para númeo inteiro*/
+
+        /* Objetivo:Considerando a figura abaixo, escreva um programa para cada forma
+         que calcule e exiba em tela cada uma de suas respectivas áreas. 
+        O usuário irá informar os valores de cada variável.
+
+                  TRAPÉZIO
+                  
+         A= (base maior + base menor). h /2   */
+        
+        let maior= prompt("Informe o valor da base maior:");
+        let menor= prompt("Informe o valor da base menor:");
+        var altura = prompt("Informe o valor da altura:");
+    
+        maior = parseInt(maior);
+        menor = parseInt(menor);
+        altura = parseInt(altura)
+        // Calcula a soma dos números
+        let resultado = maior + menor;
+        
+     
+        alert("Área do trapézio:" + " " + (resultado * altura / 2)+ "m²");
+        document.write("Área do trapézio:" + "  " +  (resultado * altura / 2)+ "m²");
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
